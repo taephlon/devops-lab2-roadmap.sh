@@ -84,7 +84,13 @@ Top 5 user agents:
 The script follows a consistent logic pattern for each metric:
 
 *Extraction: `awk` pulls the relevant column (e.g., column 1 for IP).
+
 *Preparation: `sort` groups identical lines together.Counting: `uniq -c` counts the occurrences of each group.
+
 *Counting: `uniq -c` and whatsoever.
+
 *Ranking: `sort -nr` sorts the counts numerically from highest to lowest.
+
 *Formatting: A final `awk` command formats the output to be human-readable.
+
+https://roadmap.sh/projects/nginx-log-analyser
